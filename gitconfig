@@ -1,0 +1,31 @@
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[user]
+	name = normanc
+	email = normanc@synology.com
+[merge]
+	tool = vimdiff
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+	log = auto
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	df = diff
+	ds = diff --name-status
+	ll = log --graph --decorate --pretty=oneline --abbrev-commit
+	la = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	li = log --graph --decorate --oneline --name-status --no-merges
+	lf = log --graph --decorate --oneline --name-status --no-merges --format=fuller
+	ss = show --name-status
+	mt = mergetool
+[push]
+	default = matching
+[commit]
+	gpgsign = true

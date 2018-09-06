@@ -6,6 +6,7 @@ set laststatus=2
 set t_Co=256
 
 set hlsearch
+color desert
 hi CursorLine cterm=none ctermbg=237
 
 "set mouse=a

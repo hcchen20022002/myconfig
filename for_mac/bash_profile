@@ -1,0 +1,32 @@
+# Setting PATH for Python 2.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+export PATH
+
+alias vi='vim -On'
+alias vim='vim -On'
+alias ll='ls -al'
+# let tmux same as terminal
+alias tmux="tmux -2"
+alias tmux-att='tmux attach -t'
+
+
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# Tell ls to be colourful
+export CLICOLOR=1
+export LSCOLORS=Exfxcxdxbxegedabagacad
+
+# Tell grep to highlight matches
+export GREP_OPTIONS='--color=auto'
+
+POWERLINE_PATH=/Users/normanc/Library/Python/2.7/lib/python/site-packages
+POWERLINE_SCRIPT=$POWERLINE_PATH/powerline/bindings/bash/powerline.sh
+if [ -f $POWERLINE_SCRIPT ]; then
+    $POWERLINE_PATH/scripts/powerline-daemon -q
+  source $POWERLINE_SCRIPT
+fi

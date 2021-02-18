@@ -64,7 +64,7 @@ filetype plugin indent on " required
 "Bundle 'Valloric/YouCompleteMe'
 
 "TabNine
-Plugin 'zxqfl/tabnine-vim'
+Plugin 'codota/tabnine-vim'
 
 "powerline
 python3 from powerline.vim import setup as powerline_setup

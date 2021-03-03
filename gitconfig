@@ -3,7 +3,7 @@
 	excludesfile = ~/.gitignore
 [user]
 	name = normanc
-	email = normanc@synology.com
+	email = norman@kronosresearch.com
 [merge]
 	tool = vimdiff
 [color]
@@ -27,5 +27,5 @@
 	mt = mergetool
 [push]
 	default = matching
-[commit]
-	gpgsign = true
+#[commit]
+#	gpgsign = true

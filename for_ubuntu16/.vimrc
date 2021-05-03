@@ -7,6 +7,7 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 set nu
+"set mouse+=a
 
 set hlsearch
 
@@ -18,6 +19,7 @@ let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 "color desert
+source /home/norman/.pyenv/versions/3.8.8/lib/python3.8/site-packages/powerline/bindings/vim/plugin/powerline.vim
 
 set cursorline
 set cursorcolumn

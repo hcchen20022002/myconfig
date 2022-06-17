@@ -8,6 +8,7 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 set nu
+"set mouse+=a
 
 set hlsearch
 
@@ -38,7 +39,9 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
 call vundle#end()
+
 filetype plugin indent on
 
 "YCM"
@@ -46,3 +49,12 @@ filetype plugin indent on
 
 "TabNine
 Plugin 'codota/tabnine-vim'
+
+"NerdTree
+map <f2> :NERDTreeToggle<cr>
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '-'
+let g:NERDTreeWinPos='left'
+let g:NERDTreeSize=30
+let g:NERDTreeShowLineNumbers=1
+let g:NERDTreeHidden=0

@@ -26,22 +26,10 @@ export LANG=en_US.UTF-8
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
 
-#set fish_function_path $fish_function_path "/usr/share/powerline/bindings/fish"
-#POWERLINE_PATH=/home/norman/Documents/workspace/lib/python3.5/site-packages
-#if [ -f $POWERLINE_SCRIPT ]; then
-#    $POWERLINE_PATH/scripts/powerline-daemon -q
-#  source $POWERLINE_SCRIPT
-#fi
-
-#POWERLINE_PATH=/home/norman/.pyenv/versions/3.8.8/lib/python3.8/site-packages
-#POWERLINE_SCRIPT=$POWERLINE_PATH/powerline/bindings/bash/powerline.sh
-#if [ -f $POWERLINE_SCRIPT ]; then
-#      source $POWERLINE_SCRIPT
-#fi
 if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
     source /usr/share/powerline/bindings/bash/powerline.sh
 fi
 
 #export PATH="/home/norman/.pyenv/bin:$PATH"
-#eval "$(pyenv init -)"
-#eval "$(pyenv virtualenv-init -)"
+#eval "$(pyvenv init -)"
+#eval "$(pyvenv virtualenv-init -)"

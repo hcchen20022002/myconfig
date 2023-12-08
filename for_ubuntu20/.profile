@@ -2,6 +2,7 @@
 # The original version is saved in .bash_profile.pysave
 #PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 #export PATH
+export PATH=$PATH:/usr/local/go/bin
 
 alias vi='vim -On'
 alias vim='vim -On'
@@ -32,12 +33,15 @@ export GREP_OPTIONS='--color=auto'
 #  source $POWERLINE_SCRIPT
 #fi
 
-POWERLINE_PATH=/home/norman/.pyenv/versions/3.8.8/lib/python3.8/site-packages
-POWERLINE_SCRIPT=$POWERLINE_PATH/powerline/bindings/bash/powerline.sh
-if [ -f $POWERLINE_SCRIPT ]; then
-      source $POWERLINE_SCRIPT
+#POWERLINE_PATH=/home/norman/.pyenv/versions/3.8.8/lib/python3.8/site-packages
+#POWERLINE_SCRIPT=$POWERLINE_PATH/powerline/bindings/bash/powerline.sh
+#if [ -f $POWERLINE_SCRIPT ]; then
+#      source $POWERLINE_SCRIPT
+#fi
+if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
+    source /usr/share/powerline/bindings/bash/powerline.sh
 fi
 
-export PATH="/home/norman/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+#export PATH="/home/norman/.pyenv/bin:$PATH"
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"

@@ -17,8 +17,9 @@ set laststatus=2
 set t_Co=256
 let g:solarized_termcolors=256
 set background=dark
-"https://github.com/altercation/vim-colors-solarized
 colorscheme solarized
+"color desert
+source /home/norman/.pyenv/versions/3.8.8/lib/python3.8/site-packages/powerline/bindings/vim/plugin/powerline.vim
 
 set cursorline
 set cursorcolumn
@@ -42,18 +43,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
-
-Plugin 'scrooloose/nerdtree'
-"TabNine
-"https://github.com/tabnine/YouCompleteMe#installation
-Plugin 'codota/YouCompleteMe'
-
-"https://github.com/vim-airline/vim-airline
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
 call vundle#end() " required
@@ -71,13 +62,13 @@ filetype plugin indent on " required
 " Put your non-Plugin stuff after this line
 
 
-let g:airline_theme='simple'
+"YCM"
+"Bundle 'Valloric/YouCompleteMe'
 
-"NerdTree
-map <f2> :NERDTreeToggle<cr>
-let g:NERDTreeDirArrowExpandable = '+'
-let g:NERDTreeDirArrowCollapsible = '-'
-let g:NERDTreeWinPos='left'
-let g:NERDTreeSize=30
-let g:NERDTreeShowLineNumbers=1
-let g:NERDTreeHidden=0
+"TabNine
+Plugin 'codota/tabnine-vim'
+
+"powerline
+"python from powerline.vim import setup as powerline_setup
+"python powerline_setup()
+"python del powerline_setup

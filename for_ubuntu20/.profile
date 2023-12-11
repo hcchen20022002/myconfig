@@ -24,7 +24,7 @@ export LANG=en_US.UTF-8
 #export LSCOLORS=Exfxcxdxbxegedabagacad
 
 # Tell grep to highlight matches
-export GREP_OPTIONS='--color=auto'
+alias grep='grep --color=auto'
 
 if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
     source /usr/share/powerline/bindings/bash/powerline.sh
